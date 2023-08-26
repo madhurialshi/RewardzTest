@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Brandon_med.otf">
+            <string>BrandonGrotesque-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="iSv-mB-Zm9" customClass="CategoryCollectionViewCell" customModule="RewardzTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="293" height="123"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6t1-16-xgt">
+                <rect key="frame" x="0.0" y="0.0" width="293" height="123"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bl-Or-uDX">
+                        <rect key="frame" x="109" y="44" width="75" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="LKb-7Y-xV8"/>
+                            <constraint firstAttribute="height" constant="35" id="Qfk-jY-WJL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="BrandonGrotesque-Medium" family="Brandon Grotesque" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wxj-Pf-pZK">
+                        <rect key="frame" x="109" y="77" width="22" height="2"/>
+                        <color key="backgroundColor" red="1" green="0.64313725490196072" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="1F8-fN-tbS"/>
+                            <constraint firstAttribute="height" constant="2" id="ylX-P3-hlQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2bl-Or-uDX" firstAttribute="centerY" secondItem="6t1-16-xgt" secondAttribute="centerY" id="4mv-vf-0En"/>
+                    <constraint firstItem="Wxj-Pf-pZK" firstAttribute="leading" secondItem="2bl-Or-uDX" secondAttribute="leading" id="EFk-Pn-QPx"/>
+                    <constraint firstItem="Wxj-Pf-pZK" firstAttribute="bottom" secondItem="2bl-Or-uDX" secondAttribute="bottom" id="OSq-J3-OnL"/>
+                    <constraint firstItem="2bl-Or-uDX" firstAttribute="centerX" secondItem="6t1-16-xgt" secondAttribute="centerX" id="tFr-La-5Ig"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="293" height="123"/>
+            <connections>
+                <outlet property="filterLabel" destination="2bl-Or-uDX" id="fsi-XJ-jrq"/>
+                <outlet property="lineView" destination="Wxj-Pf-pZK" id="WfP-aB-EeZ"/>
+            </connections>
+            <point key="canvasLocation" x="211.4503816793893" y="45.422535211267608"/>
+        </collectionViewCell>
+    </objects>
+</document>
